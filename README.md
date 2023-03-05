@@ -29,7 +29,7 @@ Create and boot a SSH ramdisk on checkm8 devices
     - A11 users, go to recovery first, then DFU.
 4. Run `./sshrd.sh boot` to boot the ramdisk
 5. Run `iproxy 6413 22`.
-    - If `iproxy` is not installed, on MacOS, run `brew install libusbmuxd`.
+    - If `iproxy` is not installed, on MacOS, run `brew install usbmuxd`.
 1. Open a new terminal, run `ssh root@localhost -p6413`. Password is `alpine`.
 1. In ssh terminal, to mount the filesystems, run `mount_filesystems`  
     - /var is mounted to /mnt2 in the ssh session.
